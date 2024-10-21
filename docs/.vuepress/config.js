@@ -1,5 +1,5 @@
 import { blogPlugin } from '@vuepress/plugin-blog'
-import { defaultTheme } from '@vuepress/theme-default'
+import { climatTheme } from './climat-theme'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
@@ -9,7 +9,7 @@ export default defineUserConfig({
   title: 'ТОВ «Клімат Стандарт Плюс»',
   description: 'Проєетування. монтаж та обслуговування вентиляційних систем, систем кондиціювання та опалення.',
 
-  theme: defaultTheme({
+  theme: climatTheme({
     logo: '/images/logo.png',
 
     navbar: [
