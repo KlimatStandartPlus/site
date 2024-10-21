@@ -1,0 +1,50 @@
+/* Joomla overriding the AddThis styles */
+#at_hover a:focus {
+	background: none !important;
+}
+
+#at_hover a:hover {
+	background-color: #3879D9 !important;color:#FFFFFF !important;
+}
+
+#atic_usersettings:hover {
+	background: none !important;
+}
+
+#atic_usersignout:hover {
+	background: none !important;
+}
+
+#at15about:hover {
+	background: none !important;
+}
+
+#at15sptx:hover {
+	background: none !important;
+}
+
+#at15pf .at-settings:hover {
+	background: none !important;
+}
+
+/*
+     FILE ARCHIVED ON 01:00:06 Jun 28, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:40:04 Oct 21, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.413
+  exclusion.robots: 0.014
+  exclusion.robots.policy: 0.007
+  esindex: 0.01
+  cdx.remote: 6.939
+  LoadShardBlock: 137.69 (3)
+  PetaboxLoader3.datanode: 158.754 (5)
+  PetaboxLoader3.resolve: 70.866 (2)
+  load_resource: 128.738
+  loaddict: 66.967
+*/

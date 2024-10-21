@@ -1,0 +1,1509 @@
+*{
+	font-family:  "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 14px;
+  /*font-stretch: condensed;*/
+}
+html {
+  font-family: serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: #fff;
+  
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+container,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+li{
+  list-style-type: none;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #d80510;
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: underline;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+mark {
+  color: #000;
+  background: #ff0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 0px solid #c0c0c0;
+}
+legend {
+  padding: 0;
+  border: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+}
+.container{
+	margin: 0 auto;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  .container{
+    width: auto;
+  }  
+}
+.clear{
+	clear: both;
+}
+html{
+}
+body{
+}
+/* Text alignments */
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+
+.animate {
+	-webkit-transition: all 600ms linear;
+	transition: all 600ms linear;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s
+}
+.animate:nth-child(odd) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s
+}
+.header{
+  width: 100%;
+  background-color: #ff5d24;
+  color: #ff5d24;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+.header .navbar{
+  position: relative;
+  min-height: 0px;
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+  min-height: 64px;
+}
+.header .navbar-toggle{
+  border-color: #fff;
+}
+.header .navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+.header .nav{
+  display: inline-block;
+  text-align: center;
+  left: initial;
+  float: none;
+}
+.header .nav>li{
+  float: none;
+  display: inline-block;
+  margin:0;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  .header .nav>li{
+    float:left;
+    display: block;
+    width: 100%;  
+  }
+}
+.header .nav>li:first-child{
+  display: none;
+}
+.header .navbar-brand{
+  display: none;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  .container{
+    overflow:hidden;
+  }
+  .row{
+    margin-left:0px !important;
+    margin-right:0px !important;
+  }
+  .header .navbar-brand{
+    display: inline-block;
+    padding: 0;
+    width: 75%;
+  }
+  .header .navbar-brand img{
+    width: 64px;
+    height: 64px;
+  }  
+  .navbar-toggle{
+    margin-top: 15px !important;
+    margin-right: 25px !important; 
+  }
+  .left img{
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #about .left, #about .right{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #our-work>.custom>.container>.row>div:first-child{
+    padding: 0;
+  }
+  #our-work .items{
+    padding: 20px 10px 20px 10px !important;
+  }
+  #contact .left{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  #contact .items{
+    padding: 20px 10px 20px 10px !important;
+  }
+  #contact .items .item{
+    display: block !important;
+    text-align: center !important;
+  }
+  #contact #map .right .map_wrapper{
+    padding: 20px 0 !important;
+    width: 100% !important;
+  }
+}
+.nav-pills>li>a, .nav>li>a{
+  border: none;
+  border-radius: 0px !important;
+  color: #fff;
+  margin: 0 0px;
+  padding: 25px 30px !important;
+  text-transform: uppercase;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 15px;
+  text-shadow: 0 0px 0 #fff !important;
+  color: #fff !important;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border: none;
+  background: none;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover,
+.nav-pills>li:hover>a, .nav>li:focus>a{
+  background: #e52f2f !important;
+  color: #fff500 !important;
+  -webkit-box-shadow:none !important;
+  box-shadow:none !important;
+}
+#about{
+  margin-top: 64px;
+  background-color: #bbcbd9;
+  padding: 20px 0 0 0;
+}
+#about .page-header, #about .tags{
+  display: none;
+}
+#about p, #about h2{
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  color: #6f6f6f;  
+}
+#about .left, #about .right{
+  padding: 30px 0 !important;
+}
+#about .right .djslider-in li{
+  border: 3px solid #C7C9CA !important;
+}
+#about .right img{
+  float:left;
+  max-width: 110%;
+}
+#about .left img{
+  width:200px;
+  margin: 20px 0;
+}
+#about .left p{
+  margin-bottom: 0;
+  width: 100%;
+  font-size:14px;
+}
+#about .left h2{
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+#about #about-section2{
+  background-color: #ececec;
+}
+#about #about-section2 .left{
+  margin:10px 0;
+}
+#about #about-section2 .right{
+  padding:70px 20px 10px !important;
+  float:left;
+  max-width: 100%;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  #about #about-section2 .right{
+    padding:10px 0px 0px !important;
+  }
+}
+/*service*/
+#service .items{
+  background-color: #eeeeee;
+  padding-top:60px;
+  padding-bottom:40px;
+  position: relative;
+}
+#service .items .row>div>a{
+  display: inline-block;
+  text-align: center;
+  color: #534743;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+#service .items .row>div:hover>a{
+  color: #ff5d24;
+}
+#service .items .row>div>a img{
+  display: block;
+  margin:20px auto;
+  padding: 0px 20px 25px;
+  border-bottom: 1px solid #534743;
+  width: 124px;
+  /*background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/arrow.png");$('.target').after('<img src="..." />');*/
+}
+#service .items .row>div>a .img-after{
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/arrow.png");
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 20px;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: -20px auto 0;
+}
+#service .items .row>div>a .img-after-hover{
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/arrow-hover.png");
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 20px;
+  position: relative;
+  display: none;
+  text-align: center;
+  margin: -20px auto 0;
+}
+#service .items .row>div>a img.img-hover{
+  display: none;
+  padding: 0px 20px 25px;
+  border-bottom: 1px solid #ff5d24;
+  width: 124px;
+}
+#service .items .row>div:hover>a img, #service .items .row>div:hover>a .img-after{
+  display: none;
+}
+#service .items .row>div:hover>a img.img-hover, #service .items .row>div:hover>a .img-after-hover{
+  display: block;
+}
+#service .service-hero{
+  background-color: #c9d4ea;
+  padding-top: 10px;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  #service .service-hero{
+    display:none;
+  }
+}
+#service .service-hero .left img{
+  width: 180px;
+  margin:70px 0;
+}
+#service .service-hero .right img{
+  height: 100%;
+  max-height: 320px;
+  float:left;
+  max-width: 110%;
+}
+
+/*production*/
+#production .items{
+  background-color: #eeeeee;
+  padding-top:60px;
+  padding-bottom:30px;
+}
+#production .items .row>div>a{
+  display: inline-block;
+  text-align: center;
+  color: #534743;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+#production .items .row>div:hover>a{
+  color: #ff5d24;
+}
+#production .items .row>div>a img{
+  display: block;
+  margin:20px auto;
+  max-height: 100px;
+  padding: 0px 20px 25px;
+}
+#production .items .row>div:nth-child(3)>a img{
+  padding: 0px 20px 5px;
+}
+#production .items .row>div>a img.img-hover{
+  display: none;
+  padding: 0px 20px 25px;
+}
+#production .items .row>div:nth-child(3)>a img.img-hover{
+  padding: 0px 20px 5px;
+}
+#production .items .row>div:hover>a img{
+  display: none;
+}
+#production .items .row>div:hover>a img.img-hover{
+  display: block;
+}
+#production .production-hero{
+  background-color: #dbad51;
+  padding-top: 30px;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  #production .production-hero{
+    display:none;
+  }
+}
+#production .production-hero .left img{
+  width: 170px;
+  margin:70px 0 45px;
+}
+#production .production-hero .right img{
+  height: 100%;
+  max-height: 320px;
+  float:left;
+}
+/*our work*/
+#our-work{
+  background-color: #eeefef;
+}
+#our-work .left{
+  background-color: #e7ddc4;
+}
+#our-work .left{
+  padding-top: 50px;
+  /* padding-left: 0%; */
+  /* float: right; */
+  /* width: 162%; */
+  position: relative;
+  right: 0;
+  width: 3000px;
+  float: right;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  #our-work .left{
+    display:none;
+  }
+}
+#our-work .left img{
+  float:right;
+  clear:both;
+  height: auto;
+  margin:20px;
+  margin-right: 30px;
+  width: 300px;
+}
+#our-work .left img:first-child{
+  margin-right: 80px;
+  width: 200px;
+}
+#our-work .items{
+  padding: 20px 0 20px 30px;
+}
+#our-work .items>div{
+  padding: 0px 10px;
+  margin: 12px 0;
+  text-align: center;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+#our-work .items>div .item{
+  background-color: #e9e9e9;
+  border:1px solid #dadbda;
+  width: 100%;
+  padding: 20px 5px 8px;
+}
+#our-work .items>div .item:hover{
+  background-color: #f5f5f5;
+}
+#our-work .items>div .item:after, #our-work .items>div .item:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#our-work .items>div .item:after {
+	border-color: rgba(233, 233, 233, 0);
+	border-top-color: #E9E9E9;
+	border-width: 9px;
+	margin-left: -9px;
+  margin-top:-1px;
+}
+#our-work .items>div .item:hover:after{
+  border-top-color: #f5f5f5;
+}
+#our-work .items>div .item:before {
+	border-color: rgba(218, 219, 218, 0);
+	border-top-color: #DADBDA;
+	border-width: 10px;
+	margin-left: -10px;
+  margin-top:-1px;
+}
+
+#our-work .items>div:after, #our-work .items>div:before {
+	top: 1px;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+#our-work .items>div:last-child:after, #our-work .items>div:last-child:before {
+	top: 1px;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+  display: none;
+}
+#our-work .items>div:after {
+	border-color: rgba(233, 233, 233, 0);
+	border-top-color: #EEEFEF;
+	border-width: 9px;
+	margin-left: -9px;
+  margin-top:-1px;
+}
+#our-work .items>div:before {
+	border-color: rgba(218, 219, 218, 0);
+	border-top-color: #DADBDA;
+	border-width: 10px;
+	margin-left: -10px;
+  margin-top:-1px;
+}
+
+#our-work .items>div .item .titlle{
+  margin-bottom: 15px;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:#534743;
+}
+
+#our-work .items>div .item .img{
+  position: relative;
+  max-width: 70%;
+  max-height: 95px;
+}
+#our-work .items .item .img-after{
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 10px;
+  width: 75px;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 10px auto 0;
+  border-top: 1px solid #5B4E4C;
+}
+#our-work .items .item:hover .img-after{
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/arrow-hover.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 10px;
+  width: 75px;
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 10px auto 0;
+  border-top: 1px solid #FF5D24;
+}
+
+#our-work .items>div .item .desc{
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  color:#534743;
+}
+#our-work .items>div .item .link{
+  text-decoration: none;
+  color:#534743;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#our-work .items>div .item .link_text{
+  text-decoration: none;
+  color:#534743;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 11px;
+  font-weight: none;
+}
+
+#our-work .items>div .item .link_text p {
+  font-size: 12px;
+}
+
+#our-work .items .show-all{
+  display: block;
+  clear: both;
+  margin: 20px auto 0;
+  text-align: center;
+  width: 120px;
+  background-color: #e9e9e9;
+  border:1px solid #dadbda;
+  padding: 8px 5px 8px;
+  text-decoration: none;
+  color: #534743;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*contact*/
+#contact{
+  background-color: #eeeeee;
+}
+#contact .left{
+  padding-left: 5px;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-right: 1px solid #c3c5c6;
+  color: #534743;
+  font-family: "Calibri", Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+@media (min-width: 0px) and (max-width:768px) {
+  #contact .left{
+    border-right: 0px solid #c3c5c6;
+  }
+}
+#contact .left .location{
+  display: block;
+  width: 100%;
+  padding-left: 15%;
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/images/homepage/location-ico.png");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 20px;
+}
+#contact .left .phone{
+  display: block;
+  width: 100%;
+  padding-left: 15%;
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/images/homepage/phone-ico.png");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 22px;
+  margin-top: 20px;
+}
+#contact .left .email{
+  display: block;
+  width: 100%;
+  padding-left: 15%;
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/images/homepage/email-ico.png");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 22px;
+  margin-top: 20px;
+}
+#contact .items {
+  padding: 20px 0 20px 30px;
+  display: inline-block;
+}
+#contact .items>div {
+  display: inline-block;
+  vertical-align: top;
+  float:none;
+}
+@media (min-width: 1118px) and (max-width:5768px) {
+  #contact .items>div {
+    width: 24.5%;
+  }
+}
+#contact .items .item{
+  padding: 0 12px;
+  margin-bottom: 25px;
+  color:#534743;
+}
+#contact .items .item .img{
+  max-width: 160px;
+  max-height: 160px;
+  width: 95%;
+}
+#contact .items .item .title{
+  font-size: 14px;
+  font-weight: 600;
+  margin:5px 0 3px;
+}
+#contact #map{
+  background-color: #c8deb8;
+}
+#contact #map .left{
+  border: none;
+}
+#contact #map .left img{
+  width: 200px;
+}
+#contact #map .right .map_wrapper{
+  padding: 20px 20px 0;
+  margin-top: -20px;
+  background-color: #c8deb8;
+  width: 90%;
+}
+
+#contact #map .right #map_canvas{
+  width: 100%;
+  height: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* not ready */
+
+/* -- form validation */
+.invalid { border-color: #B94A48;background:#F2DEDE}
+label.invalid , label.required  span{ color: #B94A48; background:none
+	}
+
+/* -- Joomla edit buttons  Frontendediting*/
+
+#editor-xtd-buttons {
+	padding: 0px;
+}
+.edit tr:hover  td {background:#eee}
+.button2-left,
+.button2-right,
+.button2-left div,
+.button2-right div {
+	float: left;
+}
+
+.button2-left a,
+.button2-right a,
+.button2-left span,
+.button2-right span {
+	display: block;
+	float: left;
+	color: #666;
+	cursor: pointer;
+}
+
+.button2-left span,
+.button2-right span {
+	cursor: default;
+	color: #999;
+}
+
+.button2-left .page a,
+.button2-right .page a,
+.button2-left .page span,
+.button2-right .page span {
+	padding: 0 6px;
+}
+
+.page span {
+	color: #000;
+	font-weight: bold;
+}
+
+
+.button2-left,
+.button2-right {
+
+	float: left;
+	margin-left: 5px;
+}
+
+
+.edit .formelm-buttons {text-align:right}
+.edit .formelm-buttons button {background:#D9EDF7; color:#095197;}
+.edit .formelm-buttons button:hover {color:#D9EDF7; background:#095197;}
+.modal-button:link,
+.modal-button:visited,
+.button2-left .readmore a:link,
+.button2-left .readmore a:visited,
+.button2-left .blank a:link,
+.button2-left .blank a:visited
+{ background-color: #D9EDF7;
+
+	color:#095197;border:solid 1px #BCE8F1; border-top:0; border-radius:0 0 3px 3px;  text-decoration:none; padding:3px}
+.button2-left a:hover,
+.button2-left .blank a:hover,
+.button2-left .readmore a:hover,
+.button2-right a:hover {
+	text-decoration: none;
+	color: #fff;
+	background:#095197;
+}
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.btn-toolbar .btn {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #D9EDF7;
+	border-image: none;
+	border-radius: 0 0 3px 3px;
+	color: #095197;
+	padding: 3px;
+	text-decoration: none;
+}
+
+div.toggle-editor {
+
+}
+
+/* Caption fixes */
+.img_caption .left {
+	float: left;
+	margin-right: 1em;
+}
+
+.img_caption .right {
+	float: right;
+	margin-left: 1em;
+}
+
+.img_caption .left p {
+	clear: left;
+	text-align: center;
+}
+
+.img_caption .right p {
+	clear: right;
+	text-align: center;
+}
+
+.img_caption  {
+	text-align: center!important;
+}
+
+.img_caption.none {
+	margin-left:auto;
+	margin-right:auto;
+}
+/* New captions */
+figure {
+	display: table;
+}
+figure.pull-center,
+img.pull-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+figcaption {
+	display: table-caption;
+	caption-side: bottom;
+}
+/* Calendar */
+#jform_publish_down_img {
+	width: 18px;
+	height: 18px;
+	margin-left: 3px;
+	background: url(/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/system/calendar.png) no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+}
+#jform_publish_up_img {
+	width: 18px;
+	height: 18px;
+	margin-left: 3px;
+	background: url(/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/system/calendar.png) no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+
+/* System Messages */
+
+.error
+{
+	padding:0px;
+	margin-bottom: 20px;
+}
+
+.error h2
+{
+	color:#000 !important;
+	font-size:1.4em !important;
+	text-transform:uppercase;
+	padding:0 0 0 0px !important
+}
+
+#system-message dt
+{
+	font-weight: bold;
+}
+#system-message dd
+{
+	margin: 0 0 15px 0;
+	font-weight: bold;
+	text-indent: 0px;
+	padding:0
+}
+#system-message dd ul
+{
+	color: #000;
+	list-style: none;
+	padding: 0px;
+}
+#system-message dd ul li
+{
+	line-height:1.5em
+}
+
+/* System Standard Messages */
+#system-message dt.message
+{
+	position:absolute;
+	top:-2000px;
+	left:-3000px;
+}
+
+#system-message dd.message  ul
+{
+	background: #fff  url(/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/system/notice-info.png) no-repeat;
+	padding-left:40px;
+	padding: 10px 10px 10px 40px;
+	border: 2px solid #90B203;
+	border-radius:10px
+}
+
+#system-message dd.message ul li{background:none !important}
+
+/* System Error Messages */
+#system-message dt.error
+{
+	position:absolute;
+	top:-2000px;
+	left:-3000px;
+}
+
+#system-message dd.error ul
+{
+	background:#fff url(/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/system/notice-alert.png) no-repeat ;
+	padding-left:40px;
+ 	padding: 10px 10px 10px 40px;
+	border: 2px solid #990000;
+	border-radius:10px
+
+}
+
+
+
+/* System Notice Messages */
+#system-message dt.notice
+{
+	position:absolute;
+	top:-2000px;
+	left:-3000px;
+}
+
+#system-message dd.notice  ul
+{
+	background:#fff url(/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/system/notice-note.png) no-repeat ;
+	padding-left:40px;
+	padding: 10px 10px 10px 40px;
+	border: 2px solid #FAA528;
+	border-radius:10px
+
+}
+#system-message dd.notice ul { color: #000;margin:10px 0 }
+
+#system-message
+{
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+#system-message dt
+{
+	font-weight: bold;
+}
+
+#system-message dd
+{
+	font-weight: bold;
+	padding: 0;
+}
+
+
+.tip-wrap { background:#FEFDE2; font-size:0.8em ; padding:5px; border:solid 1px #ddd; border-radius:3px; box-shadow: 0 1px 5px #ccc }
+.tip-title {font-weight:bold}
+
+#all #upload-flash ul li a:hover,
+#all .item a:hover span {
+	background:#095197;
+	color:#fff;
+}
+
+
+/* ##########################  user profile  ########################### */
+
+#users-profile-core,
+#users-profile-custom
+{
+	margin:10px 0 15px 0;
+	padding:15px;
+}
+
+#users-profile-core dt,
+#users-profile-custom dt
+{
+	float:left;
+	width:12em;
+	padding:3px 0;
+
+
+}
+
+#users-profile-core dd,
+#users-profile-custom dd
+{
+	padding:3px 0;
+}
+
+#member-profile fieldset,
+.registration fieldset
+{
+	margin:10px 0 15px 0;
+	padding:15px;
+
+}
+
+#users-profile-core legend,
+#users-profile-custom legend,
+.profile-edit legend,
+.registration legend
+{
+	font-weight:bold
+}
+
+.profile-edit form#member-profile fieldset dd,
+.registration form#member-registration fieldset dd
+{ float:none; padding:5px 0}
+
+.profile-edit form#member-profile fieldset dd input,
+.profile-edit form#member-profile fieldset dd select,
+.registration form#member-registration fieldset dd input
+{width:17em}
+.profile-edit form#member-profile fieldset dt,
+.registration form#member-registration fieldset dt
+{padding:5px 5px 5px 0; width:13em}
+
+
+span.optional
+{font-size:0.9em}
+
+/* ##########################  clearing  ########################### */
+.clr {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+
+/* ##########################  tooltip  ########################### */
+.tooltip {
+	position: absolute;
+	z-index: 103000;
+	display: block;
+	visibility: visible;
+	font-size: 11px;
+	line-height: 1.4;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.tooltip.in {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.tooltip.top {
+	margin-top: -3px;
+	padding: 5px 0;
+}
+.tooltip.right {
+	margin-left: 3px;
+	padding: 0 5px;
+}
+.tooltip.bottom {
+	margin-top: 3px;
+	padding: 5px 0;
+}
+.tooltip.left {
+	margin-left: -3px;
+	padding: 0 5px;
+}
+.tooltip-inner {
+	max-width: 200px;
+	padding: 8px;
+	color: #fff;
+	text-align: left;
+	text-decoration: none;
+	background-color: #000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #000;
+}
+.tooltip.right .tooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -5px;
+	border-width: 5px 5px 5px 0;
+	border-right-color: #000;
+}
+.tooltip.left .tooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -5px;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #000;
+}
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000;
+}
+.element-invisible {
+	/*position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;*/
+}
+#filter-search {
+	vertical-align: top;
+}
+.input-mini {
+	width: 60px;
+}
+
+/* Bootstrap overrides anhiliation
+ * @since 3.2
+ */
+ /*
+body#shadow {
+    line-height: 1.5em;
+}
+body .nav-pills > .active > a, body .nav-pills > .active > a:hover, body .nav-pills > .active > a:focus {
+    background-color: transparent;
+}
+body .nav-pills > li > a {
+    border-radius: 0px;
+    line-height: 1.5em;
+}
+body a {
+    text-decoration: underline;
+}
+body input[type="text"].search-query {
+    line-height: 1.5em;
+    height: auto;
+    border-radius: 4px;
+
+}*/
+/*pager*/
+.pager a{
+  color: #F78015;
+  background-color: #004780;
+  border: 1px solid #F78015;
+  padding: 5px 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.pager a:hover{
+  color: #fff;
+  background-color: #004780;
+  border: 1px solid #F78015;
+  padding: 5px 10px;
+}
+/*xmap*/
+#xmap a{
+	font-size: 18px;
+  line-height: 22px;
+	text-transform: uppercase;
+	color: #CC2F28;
+}
+#xmap a:hover{
+	text-decoration: underline;
+}
+#xmap ul {
+    display : block;
+    list-style : none;
+    margin : 0;
+    padding : 0;
+}
+#xmap ul li {
+    margin : 0;
+    padding : 5px;
+    background : transparent;
+}
+#xmap a img {
+    border : none;
+}
+#xmap ul.level_0 ul {
+    list-style : inside square;
+    padding : 0;
+}
+#xmap ul.level_1 li {
+    padding : 5px 2em 05px 2em;
+}
+#xmap .active {
+    font-style : italic;
+}
+#xmap .menutitle{
+	display: none;
+}
+
+.header .search-block{
+  position: relative;
+  width: 300px;
+  display: inline-block;
+}
+.header .search-block{
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  height: 40px;
+  margin-top: -5px;
+}
+@media (min-width: 0px) and (max-width:500px) {
+  .header .search-block{
+    width: 250px;
+  }
+}
+.header .search-block .element-invisible{
+  display: none;
+}
+.header .search-block #mod-search-searchword{
+  position: relative;
+  height: 35px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  background-color: #ff5d24;
+  border-radius: 0;
+  font-size: 15px;
+}
+.header .search-block .button{
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/search-ico.png");
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  position: relative;
+  display: block;
+  text-align: center;
+  float: right;
+  text-indent: -9999px;
+} 
+.header .search-block .button:hover{
+  opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.header .search-block #mod-search-searchword::placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:focus::placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:hover::placeholder{color:#fff;}
+.header .search-block #mod-search-searchword::-webkit-input-placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:focus::-webkit-input-placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:hover::-webkit-input-placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:-moz-placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:focus:-moz-placeholder{color:#fff;}
+.header .search-block #mod-search-searchword:hover:-moz-placeholder{color:#fff;}
+.header .search-block #mod-search-searchword::-moz-placeholder{color:#fff;opacity: 1;}
+.header .search-block #mod-search-searchword:focus::-moz-placeholder{color:#fff;opacity: 1;}
+.header .search-block #mod-search-searchword:hover::-moz-placeholder{color:#fff;opacity: 1;}
+.header .search-block #mod-search-searchword:-ms-input-placeholder{color:#fff;opacity: 1;}
+.header .search-block #mod-search-searchword:focus:-ms-input-placeholder{color:#fff;opacity: 1;}
+.header .search-block #mod-search-searchword:hover:-ms-input-placeholder{color:#fff;opacity: 1;}
+
+.popup-links{
+  position: fixed;
+  width: 30px;
+  height: auto;
+  right: 0;
+  top: 30%;
+  background: #eeeeee;
+  min-height: 175px;
+  border-radius: 2px 0 0 2px;
+  z-index: 10000;
+}
+.popup-links .ico{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url("/web/20220628010002im_/http://www.klimat-standart.com.ua/templates/climat/images/img_icons.png");
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: 2px -4px;
+  margin-bottom: 2px;
+}
+.popup-links .ico:hover{
+  right: 10px;
+  width: 40px;
+  border-radius: 2px !important;
+  background-color: #eeeeee;
+}
+.popup-links .tw{
+  background-position: 2px -35px;
+}
+.popup-links .fb{
+  background-position: 2px -67px;
+}
+.popup-links .loc{
+  background-position: 2px -105px;
+}
+.popup-links .phone{
+  background-position: 2px -143px;
+}
+.popup-links .email{
+  background-position: 2px -177px;
+  margin-bottom: 0;
+}
+/*
+     FILE ARCHIVED ON 01:00:02 Jun 28, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:40:04 Oct 21, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.214
+  exclusion.robots: 0.67
+  exclusion.robots.policy: 0.658
+  esindex: 0.01
+  cdx.remote: 17.422
+  LoadShardBlock: 143.044 (3)
+  PetaboxLoader3.datanode: 136.389 (5)
+  PetaboxLoader3.resolve: 61.564 (2)
+  load_resource: 84.692
+  loaddict: 38.694
+*/

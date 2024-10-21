@@ -15,6 +15,7 @@ const climatTheme = (options) =>
     // set custom dev / build template
     // if the template is not specified, the default template
     templateBuild: path.resolve(__dirname, 'templates/build.html'),
+    templateDev: path.resolve(__dirname, 'templates/build.html'),
 
     // use plugins
     plugins: [
