@@ -13,9 +13,3 @@ TODOs.md
 # Editors
 .idea
 
-# VuePress temp directory
-/docs/.vuepress/.temp
-/docs/.vuepress/.cache
-
-# Docs dist directory
-/docs/.vuepress/dist
